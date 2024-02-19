@@ -25,7 +25,7 @@ echo "Running apache2, php, php-mysql, php-json, and mariadb-server installation
 sleep 2
 apt install apache2 php php-mysql php-json mariadb-server -y
 mkdir /var/www/contoh
-cp /var/www/html.index.html /var/www/contoh
+cp /var/www/html/index.html /var/www/contoh
 mv contoh.conf /etc/apache2/sites-available
 a2ensite contoh.conf
 a2dissite 000-default.conf
